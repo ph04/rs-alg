@@ -64,8 +64,6 @@ pub fn sort_by_heapsort(array: &mut [usize]) {
 
     build_max_heap(array, heap_size);
 
-    println!("{:?}", array);
-
     (2..array.len()).rev().for_each(|index| {
         array.swap(index, 0);
 
