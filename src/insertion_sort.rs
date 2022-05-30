@@ -4,6 +4,7 @@ fn shift_array(array: &mut [usize], start: usize, end: usize) {
     }
 }
 
+/// Sorts the given array, in place, by using the Insertion sort algorithm.
 pub fn sort_by_insertion_sort(array: &mut [usize]) {
     unimplemented!();
 

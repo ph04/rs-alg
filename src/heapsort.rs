@@ -58,7 +58,7 @@ fn max_heapify(array: &mut [usize], index: usize, heap_size: usize) {
     }
 }
 
-// Sorts the given array, in place, by using the Heapsort algorithm.
+/// Sorts the given array, in place, by using the Heapsort algorithm.
 pub fn sort_by_heapsort(array: &mut [usize]) {
     let mut heap_size = array.len();
 
