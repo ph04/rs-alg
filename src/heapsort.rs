@@ -1,3 +1,5 @@
+// TODO: reindex everything
+
 /// Builds a max-heap from the given array.
 fn build_max_heap(array: &mut [usize], heap_size: usize) {
     (1..=array.len() / 2).rev().for_each(|index| max_heapify(array, index, heap_size));
