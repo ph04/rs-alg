@@ -11,8 +11,6 @@ def get_min_index(array, start):
 
 def sort_by_selection_sort(array):
     for i in range(len(array) - 1):
-        print(array)
-
         min_index = get_min_index(array, i)
 
         array[i], array[min_index] = array[min_index], array[i]

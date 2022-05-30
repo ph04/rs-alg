@@ -16,7 +16,7 @@ fn main() {
 
     // sort_by_heapsort(&mut array);
     // sort_by_selection_sort(&mut array);
-    // sort_by_insertion_sort(&mut array); // doesn't work yet
+    sort_by_insertion_sort(&mut array); // doesn't work yet
     // sort_by_bubble_sort(&mut array);
     // array = sort_by_mergesort(array); // doesn't work yet
 

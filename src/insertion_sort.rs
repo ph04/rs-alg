@@ -19,11 +19,12 @@ pub fn sort_by_insertion_sort(array: &mut [usize]) {
             continue;
         }
 
-        while i != 0 && array[i] > current_element {
+        while i != 0 && array[i] > current_element { // TODO: should be i != -1
             i -= 1;
         }
 
-        println!("{}", i);
+        // println!("{}", i);
+        i += 1;
 
         shift_array(array, i, index);
     }
