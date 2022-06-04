@@ -9,13 +9,30 @@ from counting_sort import sort_by_counting_sort_general
 
 from binary_search import binary_search_iterative
 from binary_search import binary_search_recursive
+from binary_search import BinarySearchTree
 
 def main():
-    array = [3, 6, 0, 4, 24, 10, 2, 3, 4, 7, 3, 1, 0]
-    # array = [6, 1, 9, 0, 3, 8, 5, 4, 7]
+    # array = [3, 6, 0, 4, 24, 10, 2, 3, 4, 7, 3, 1, 0]
+    array = [6, 1, 9, 0, 3, 8, 5, 4, 7]
     # array = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
 
     sorted_array = sorted(array.copy())
+
+    try:
+        bst = BinarySearchTree.from_list(array)
+
+        BinarySearchTree.show_in_order(bst)
+
+        target = 14
+        target_node = BinarySearchTree.binary_search(bst, target)
+
+        if target_node:
+            print(target == target_node.value)
+            print(target_node.value)
+        else:
+            print("\n-1")
+    except:
+        print("Can't show BST.")
 
     sort_by_heapsort(array)
     # sort_by_selection_sort(array)
